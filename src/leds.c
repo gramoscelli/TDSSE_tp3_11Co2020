@@ -35,3 +35,12 @@ void LedsTurnOnAll(void) {
 void LedsTurnOffAll(void) {
     *port = LEDS_ALL_OFF;
 }
+
+
+bool LedsIsOn(uint8_t led) {
+    return (*port & BitMask(LedToBit(led))) != 0;
+}
+
+bool LedsIsOff(uint8_t led) {
+    return (*port & BitMask(LedToBit(led))) == 0;
+}

@@ -31,12 +31,20 @@
   :line: 66
   :message: ''
   :unity_test_time: 0
+- :test: test_consultar_led_prendido
+  :line: 73
+  :message: ''
+  :unity_test_time: 0
+- :test: test_consultar_led_apagado
+  :line: 80
+  :message: ''
+  :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 7
-  :passed: 7
+  :total: 9
+  :passed: 9
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0020616279944078997
+:time: 0.0016289129998767748

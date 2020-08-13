@@ -140,3 +140,51 @@ void test_apagar_todos_los_leds_version_2(void) {
    ), (UNITY_UINT)(70), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_consultar_led_prendido(void) {
+
+
+
+    LedsTurnOn(1);
+
+    uint8_t result = LedsIsOn(1);
+
+    UnityAssertEqualNumber((UNITY_INT)((
+
+   1
+
+   )), (UNITY_INT)((result)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(77), UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_consultar_led_apagado(void) {
+
+
+
+    LedsTurnOn(3);
+
+    LedsTurnOn(5);
+
+    LedsTurnOff(3);
+
+    uint8_t result = LedsIsOff(3);
+
+    UnityAssertEqualNumber((UNITY_INT)((
+
+   1
+
+   )), (UNITY_INT)((result)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(86), UNITY_DISPLAY_STYLE_INT);
+
+}
