@@ -86,3 +86,19 @@ void test_encender_y_apapgar_varios_leds(void) {
    ), (UNITY_UINT)(49), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_encender_todos_los_leds(void) {
+
+
+
+    LedsTurnOnAll();
+
+    UnityAssertEqualNumber((UNITY_INT)((0xFFFF)), (UNITY_INT)((virtuales)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(55), UNITY_DISPLAY_STYLE_INT);
+
+}

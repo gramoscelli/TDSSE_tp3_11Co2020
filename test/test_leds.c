@@ -48,3 +48,10 @@ void test_encender_y_apapgar_varios_leds(void) {
     LedsTurnOff(3);
     TEST_ASSERT_EQUAL(0x0010, virtuales);
 }
+
+void test_encender_todos_los_leds(void) {
+    //TEST_FAIL_MESSAGE("falla adrede...");
+    LedsTurnOnAll();
+    TEST_ASSERT_EQUAL(0xFFFF, virtuales);
+}
+
