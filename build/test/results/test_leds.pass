@@ -23,12 +23,20 @@
   :line: 52
   :message: ''
   :unity_test_time: 0
+- :test: test_apagar_todos_los_leds_version_1
+  :line: 58
+  :message: ''
+  :unity_test_time: 0
+- :test: test_apagar_todos_los_leds_version_2
+  :line: 66
+  :message: ''
+  :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 5
-  :passed: 5
+  :total: 7
+  :passed: 7
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.004728919986519031
+:time: 0.0020616279944078997

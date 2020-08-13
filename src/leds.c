@@ -31,3 +31,7 @@ void LedsTurnOff(uint8_t led) {
 void LedsTurnOnAll(void) {
     *port = LEDS_ALL_ON;
 }
+
+void LedsTurnOffAll(void) {
+    *port = LEDS_ALL_OFF;
+}

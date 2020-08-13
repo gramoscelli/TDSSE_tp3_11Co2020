@@ -102,3 +102,41 @@ void test_encender_todos_los_leds(void) {
    ), (UNITY_UINT)(55), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_apagar_todos_los_leds_version_1(void) {
+
+
+
+    LedsTurnOn(3);
+
+    LedsTurnOn(5);
+
+    LedsTurnOffAll();
+
+    UnityAssertEqualNumber((UNITY_INT)((0x0000)), (UNITY_INT)((virtuales)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(63), UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_apagar_todos_los_leds_version_2(void) {
+
+
+
+    LedsTurnOnAll();
+
+    LedsTurnOffAll();
+
+    UnityAssertEqualNumber((UNITY_INT)((0x0000)), (UNITY_INT)((virtuales)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(70), UNITY_DISPLAY_STYLE_INT);
+
+}

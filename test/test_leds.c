@@ -55,3 +55,17 @@ void test_encender_todos_los_leds(void) {
     TEST_ASSERT_EQUAL(0xFFFF, virtuales);
 }
 
+void test_apagar_todos_los_leds_version_1(void) {
+    //TEST_FAIL_MESSAGE("falla adrede...");
+    LedsTurnOn(3);
+    LedsTurnOn(5);
+    LedsTurnOffAll();
+    TEST_ASSERT_EQUAL(0x0000, virtuales);
+}
+
+void test_apagar_todos_los_leds_version_2(void) {
+    //TEST_FAIL_MESSAGE("falla adrede...");
+    LedsTurnOnAll();
+    LedsTurnOffAll();
+    TEST_ASSERT_EQUAL(0x0000, virtuales);
+}
